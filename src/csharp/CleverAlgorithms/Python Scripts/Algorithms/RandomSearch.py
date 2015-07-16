@@ -1,4 +1,5 @@
 import unittest
+import random
 
 try:
     j = 0
@@ -19,7 +20,7 @@ try:
         summa = 0
         for i in vector:
             summa = summa+i**2
-        return summa.random()
+        return summa * random.random()
             
     class MyTest(unittest.TestCase):
         def test(self):
